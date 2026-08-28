@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zeppgpt"
+version = "0.1.0"
+description = "Read-only Zepp workout MCP server and normalization layer"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = ["mcp>=2.1.1,<3"]
+keywords = ["zepp", "workouts", "mcp", "chatgpt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+[project.urls]
+Repository = "https://github.com/jcappaert/ZeppGPT"
+Issues = "https://github.com/jcappaert/ZeppGPT/issues"
+
+[project.scripts]
+zeppgpt = "zeppgpt.cli:main"
+zepp-mcp = "zeppgpt.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["zeppgpt"]

@@ -1,0 +1,25 @@
+{
+  "pool_synthetic_1500": {
+    "summary": {"trackid":"1700000000","source":"synthetic.fixture","type":14,"sport_mode":0,"end_time":"1700002100","run_time":1980,"pause_time":120,"dis":1500,"calorie":300,"avg_heart_rate":125,"min_heart_rate":90,"max_heart_rate":145,"swim_pool_length":25,"swim_style":2,"swolf":41,"total_strokes":640,"total_trips":60,"freestyle_length":1000,"breast_stroke_length":500,"avg_distance_per_stroke":2.34,"avg_stroke_speed":0.41666666,"max_stroke_speed":0.5},
+    "pause_offset_seconds": 3,
+    "pause_duration_seconds": 120,
+    "columns": [0,1,2,4,5,9,12,13,14,15,18,26,43,53,57,67],
+    "groups": [[0,600,500,122,777,1.2,0.41666666,240,42,90,5,1,600000,2.08,777000,140],[1,600,500,126,1437,1.2,0.41666666,200,40,95,5,2,600000,2.25,1437000,142],[2,600,500,128,2160,1.2,0.41666666,200,40,100,5,2,600000,2.34,2160000,145]],
+    "length_generation": {"count":60,"distance_meters":25,"duration_milliseconds":30000,"first_end_milliseconds":153750,"completion_interval_milliseconds":33000,"breaststroke_lengths":20,"breaststroke_strokes":12,"freestyle_strokes":10,"stroke_rate_per_second":0.41666666,"average_heart_rate_bpm":120,"maximum_heart_rate_bpm":140,"energy_kilocalories":5}
+  },
+  "run_synthetic_8km": {
+    "summary": {"trackid":"1700100000","source":"synthetic.fixture","type":1,"sport_mode":0,"end_time":"1700103000","run_time":3000,"dis":8000,"calorie":600,"avg_heart_rate":150,"min_heart_rate":100,"max_heart_rate":170,"elevationGain":5000,"elevationLoss":4500,"altitude_ascend":50,"altitude_descend":45,"avg_frequency":150,"max_frequency":165,"avg_stride_length":100,"total_step":8000},
+    "altitudes_centimeters": [10000,10200,10400,10600,10800,11000,11200,11400,11600,11800,12000,12200,12400,12600,12800,13000,12700,12400,12100,11800],
+    "split_columns": [0,1,4,5,6,7,13],
+    "splits": [[0,350,140,350,350000,70,150],[1,355,145,705,355000,72,151],[2,360,148,1065,360000,74,149],[3,365,150,1430,365000,76,150],[4,370,152,1800,370000,78,151],[5,375,154,2175,375000,80,150],[6,380,156,2555,380000,82,149],[7,385,158,2940,385000,84,150]]
+  },
+  "rowing_synthetic_type_23": {
+    "summary": {"trackid":"1700200000","source":"synthetic.fixture","type":23,"sport_mode":0,"end_time":"1700203000","run_time":2850,"pause_time":150,"pauseTimeWithMillis":150000,"dis":10000,"calorie":900,"avg_heart_rate":125,"min_heart_rate":80,"max_heart_rate":150,"avg_frequency":25,"max_frequency":32,"avg_pulloar_time":0.65,"avg_return_time":1.55,"strokes":1200,"total_strokes":1200},
+    "pauses": [[1000,50,2],[2000,50,2],[2900,50,2]],
+    "lap_columns": [0,1,2,4,5,13,15,16,18,26,43,57],
+    "lap": [0,2850,0,125,3050,1200,900,25,0,5,2850000,3050000]
+  },
+  "hiking_synthetic_type_22": {
+    "summary": {"trackid":"1700300000","source":"synthetic.fixture","type":22,"sport_mode":0,"end_time":"1700307200","run_time":7200,"pause_time":-1,"dis":9000,"calorie":800,"avg_heart_rate":115,"min_heart_rate":75,"max_heart_rate":150,"total_step":12000,"elevationGain":40000,"elevationLoss":39000,"altitude_ascend":400,"altitude_descend":390,"avg_pace":0.8}
+  }
+}

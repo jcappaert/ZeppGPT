@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+.secrets/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+
+# Zepp payloads contain sensitive health and location data.
+diagnostics/
+data/
+*.har
+*.chlsj
+*.saz
+*.flow

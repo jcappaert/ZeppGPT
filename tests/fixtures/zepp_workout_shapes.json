@@ -1,0 +1,183 @@
+{
+  "templates": {
+    "route": {
+      "time": "0;1;1;2;",
+      "longitude_latitude": "1000000000,2000000000;100,-100;;200,300;",
+      "altitude": "10000;10025;-2000000;10100;",
+      "accuracy": "3;3.5;;4;",
+      "course": "90;91;;92;",
+      "flag": "1;1;;2;",
+      "pace": "0.5;0.4;;0.3;",
+      "heart_rate": "2,100;,5;2,-3;",
+      "speed": "2,1.5;1,2.0;",
+      "currentDistance": "2,0;1,500;2,1000;",
+      "gait": "1,1,80,160;2,2,82,162;",
+      "kilo_pace": "{{kilo15}}",
+      "strengthSets": "[]",
+      "future_route_series": "synthetic-unclassified"
+    },
+    "pool": {
+      "heart_rate": "2,90;2,5;",
+      "currentDistance": "2,0;2,2500;",
+      "pause": "{{pause}}",
+      "lap": "{{lap70}}",
+      "pool_swim_pace": "synthetic-unclassified",
+      "pool_stroke_speed": "synthetic-unclassified",
+      "temperature": "synthetic-unclassified",
+      "strengthSets": "[]"
+    },
+    "non_gps": {
+      "time": "0;1;1;2;",
+      "pace": "12;10;11;9;",
+      "heart_rate": "2,95;2,4;",
+      "speed": "2,0.8;2,1.0;",
+      "currentDistance": "2,0;2,1200;",
+      "gait": "1,1,60,80;2,2,62,82;",
+      "pause": "{{pause}}",
+      "kilo_pace": "{{kilo15}}",
+      "lap": "{{lap70}}",
+      "stroke_speed": "synthetic-unclassified",
+      "strengthSets": "[]"
+    }
+  },
+  "workouts": [
+    {
+      "shape": "running",
+      "template": "route",
+      "summary": {
+        "trackid": "1700000000",
+        "source": "synthetic.watch",
+        "type": 1,
+        "sport_mode": 0,
+        "end_time": "1700000600",
+        "run_time": "600",
+        "pause_time": "0",
+        "dis": "1000",
+        "highPrecisionDistance": 1000.0,
+        "calorie": "100",
+        "avg_heart_rate": "100",
+        "min_heart_rate": 90,
+        "max_heart_rate": 120,
+        "total_step": 1000,
+        "elevationGain": 10,
+        "elevationLoss": 8,
+        "avg_frequency": "160",
+        "max_frequency": 170,
+        "avg_stride_length": 80,
+        "VO2_max": 45,
+        "exercise_load": 50,
+        "te": 30,
+        "anaerobic_te": 20,
+        "bind_device": "Synthetic Watch",
+        "future_summary_field": "preserve-me"
+      },
+      "detail_extras": {
+        "runPosture": "synthetic-unclassified",
+        "power_meter": "synthetic-unclassified"
+      }
+    },
+    {
+      "shape": "walking",
+      "template": "route",
+      "summary": {
+        "trackid": "1700100000",
+        "source": "synthetic.watch",
+        "type": 6,
+        "sport_mode": 0,
+        "end_time": "1700100600",
+        "run_time": "600",
+        "dis": "1000",
+        "calorie": "80",
+        "avg_heart_rate": "95",
+        "min_heart_rate": 80,
+        "max_heart_rate": 110,
+        "avg_frequency": "100",
+        "avg_stride_length": 70
+      }
+    },
+    {
+      "shape": "pool_mode_0",
+      "template": "pool",
+      "summary": {
+        "trackid": "1700200000",
+        "source": "synthetic.watch",
+        "type": 14,
+        "sport_mode": 0,
+        "end_time": "1700200600",
+        "run_time": "500",
+        "pause_time": "100",
+        "dis": "1000",
+        "calorie": "120",
+        "avg_heart_rate": "100",
+        "min_heart_rate": 85,
+        "max_heart_rate": 125,
+        "swim_pool_length": 25,
+        "swim_style": 1,
+        "swolf": 40,
+        "total_strokes": 200,
+        "total_trips": 40,
+        "number_of_break": 2
+      }
+    },
+    {
+      "shape": "pool_mode_5",
+      "template": "pool",
+      "summary": {
+        "trackid": "1700300000",
+        "source": "synthetic.watch",
+        "type": 14,
+        "sport_mode": 5,
+        "end_time": "1700300600",
+        "run_time": "500",
+        "pause_time": "100",
+        "dis": "1000",
+        "calorie": "120",
+        "avg_heart_rate": "100",
+        "min_heart_rate": 85,
+        "max_heart_rate": 125,
+        "swim_pool_length": 50,
+        "swim_style": 2,
+        "swolf": 42,
+        "total_strokes": 180,
+        "total_trips": 20
+      }
+    },
+    {
+      "shape": "hiking_22",
+      "template": "route",
+      "summary": {
+        "trackid": "1700400000",
+        "source": "synthetic.watch",
+        "type": 22,
+        "sport_mode": 0,
+        "end_time": "1700400600",
+        "run_time": "600",
+        "dis": "1000",
+        "calorie": "100",
+        "avg_heart_rate": "100",
+        "min_heart_rate": 90,
+        "max_heart_rate": 120,
+        "unknown_sport_value": 321
+      }
+    },
+    {
+      "shape": "unknown_non_gps_23",
+      "template": "non_gps",
+      "summary": {
+        "trackid": "1700500000",
+        "source": "synthetic.watch",
+        "type": 23,
+        "sport_mode": 0,
+        "end_time": "1700500600",
+        "run_time": "580",
+        "pause_time": "20",
+        "dis": "1200",
+        "calorie": "110",
+        "avg_heart_rate": "99",
+        "min_heart_rate": 84,
+        "max_heart_rate": 121,
+        "unknown_sport_value": 654
+      }
+    }
+  ]
+}
