@@ -38,10 +38,17 @@ uv sync
 
 ## Configure Zepp authentication
 
-ZeppGPT uses the same `apptoken` header and numeric user ID as the Zepp web or
-mobile service. To find them, sign in to Zepp, open the browser developer tools,
-and inspect an authenticated request to a host such as
-`api-mifit-de2.zepp.com` or `api-mifit.huami.com`.
+ZeppGPT sends an `apptoken` header to the workout API, but the Zepp website
+stores that token in a browser cookie. To find it, sign in to Zepp and open the
+browser developer tools. In Chrome or Edge, open **Application → Cookies**; in
+Firefox, open **Storage → Cookies**. Select the relevant Zepp or Huami site and
+copy the value of the `apptoken` cookie.
+
+The numeric user ID can be found in the Network panel after loading account
+data. Inspect an authenticated request to a host such as
+`api-mifit-de2.zepp.com` or `api-mifit.huami.com` and look for a `userid` query
+parameter. Cookie contents are credentials, so do not paste them into an issue
+or commit them to the repository.
 
 Copy the example environment file:
 
